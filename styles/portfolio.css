@@ -17,7 +17,6 @@ header {
     background: url("../images/developer.png"), url("../images/header_bg.png"), #FFF8F3;
     background-position: 23px 38px, bottom right;
     background-repeat: no-repeat;
-
     padding-top: 51px;
 }
 
@@ -322,6 +321,23 @@ footer .footer-container {
 }
 
 @media screen and (max-width:576px) {
+    .btn {
+    width: 171px;
+    height: 44px;
+    font-size: 17px;
+    }
+    nav {
+        width: 100%;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul {
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+    }
+
     .skill-container {
         width: 100%;
         background-color: #FFFFFF;
@@ -338,14 +354,82 @@ footer .footer-container {
         padding: 50px;
     }
 
+    #resume .resume-container {
+        width: 100%;
+        flex-direction: column;
+        gap: 22px;
+        margin-top: auto;
+    }
+
+    #about {
+        padding: 0px;
+    }
+
     .about-container {
         width: 100%;
         background-color: #FFF8F3;
         text-align: center;
         padding: 40px;
     }
+
     .about-info {
-    flex-direction: column;
-    gap: 30px;
-}
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer {
+        margin-top: 50px;
+        padding: 40px 0;
+    }
+
+    footer .footer-container {
+        width: 100%;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .footer-container form input[type="text"],
+    .footer-container textarea {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+
+
+    #banner {
+        margin:0px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #banner .banner-content {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    #banner .banner-content h2 {
+        font-size: 35px;
+    }
+
+    #banner .banner-content h1 {
+        font-size: 45px;
+    }
+     #banner .banner-content .hero-btn{
+        flex-direction: column;
+        gap: 10px;
+     }
+    #banner .banner-image img {
+        max-width: 284px;
+        max-height: 376px;
+    }
+
+    header {
+        background: url("../images/header_bg.png"), #FFF8F3;
+        background-position: bottom right;
+        background-repeat: no-repeat;
+    }
+
 }
